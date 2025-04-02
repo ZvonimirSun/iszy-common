@@ -22,6 +22,6 @@ export interface RawUser {
 
 export type PublicUser = Omit<RawUser, 'passwd' | 'passwdSalt'>
 export type RegisterUser = Pick<RawUser, 'userName' | 'nickName' | 'mobile' | 'email' | 'passwd'>
-export type UpdateUser = Partial<Pick<RawUser, 'userName' | 'nickName' | 'mobile' | 'email' | 'passwd'>> & {
+export interface UpdateUser extends Partial<Pick<RawUser, 'userName' | 'nickName' | 'mobile' | 'email' | 'passwd'>> {
   oldPasswd?: string
 }
