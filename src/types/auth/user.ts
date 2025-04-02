@@ -21,3 +21,4 @@ export interface RawUser {
 }
 
 export type PublicUser = Omit<RawUser, 'passwd' | 'passwdSalt'>
+export type RegisterUser = Pick<RawUser, 'userName' | 'nickName' | 'mobile' | 'email' | 'passwd'>
