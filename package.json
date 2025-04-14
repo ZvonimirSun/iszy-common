@@ -2,7 +2,7 @@
   "name": "@zvonimirsun/iszy-common",
   "type": "module",
   "version": "1.0.9",
-  "packageManager": "pnpm@10.7.0",
+  "packageManager": "pnpm@10.8.1",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -29,10 +29,10 @@
     "uuid": "^11.1.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.11.0",
-    "eslint": "^9.23.0",
+    "@antfu/eslint-config": "^4.12.0",
+    "eslint": "^9.24.0",
     "taze": "^19.0.4",
-    "typescript": "~5.7.2",
-    "vite": "^6.2.0"
+    "typescript": "~5.8.3",
+    "vite": "^6.2.6"
   }
 }
