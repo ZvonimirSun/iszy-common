@@ -1,8 +1,11 @@
 export interface Device {
   id?: string
   ip: string
+  name: string
   current?: boolean
-  name?: boolean
+  createdAt?: Date
+  updatedAt?: Date
+  [key: string]: any
 }
 
 export interface DeviceCache extends Device {
