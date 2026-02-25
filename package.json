@@ -3,8 +3,8 @@
   "type": "module",
   "author": "ZvonimirSun",
   "license": "MIT",
-  "version": "1.1.0",
-  "packageManager": "pnpm@10.28.0",
+  "version": "1.1.1",
+  "packageManager": "pnpm@10.30.2",
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -31,10 +31,15 @@
     "uuid": "^13.0.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^7.0.1",
+    "@antfu/eslint-config": "^7.2.0",
     "eslint": "^9.39.2",
     "taze": "^19.9.2",
     "typescript": "~5.9.3",
     "vite": "^7.3.1"
+  },
+  "pnpm": {
+    "overrides": {
+      "jsonc-eslint-parser": "^3.1.0"
+    }
   }
 }
