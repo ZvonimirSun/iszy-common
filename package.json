@@ -3,7 +3,7 @@
   "type": "module",
   "author": "ZvonimirSun",
   "license": "MIT",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "packageManager": "pnpm@10.30.2",
   "exports": {
     ".": {
