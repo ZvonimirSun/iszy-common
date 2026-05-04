@@ -28,7 +28,7 @@
     "up": "taze minor -I"
   },
   "dependencies": {
-    "uuid": "^13.0.0"
+    "uuid": "^14.0.0"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^7.2.0",
