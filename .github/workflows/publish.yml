@@ -5,25 +5,24 @@ on:
       - main
   workflow_dispatch:
 
+env:
+  MAIN_BRANCH: main
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v4
-      - name: Use Node.js 20
-        uses: actions/setup-node@v6
+      - uses: pnpm/action-setup@v6
         with:
-          node-version: 20
-          registry-url: 'https://registry.npmjs.org/'
-          cache: 'pnpm'
-
-      - name: Install dependencies
-        run: pnpm install
+          cache: true
+          run_install: true
 
       - name: Build
         run: pnpm run build
 
-      - run: pnpm publish --access public
+      - name: Publish
+        run: pnpm publish --access public
+        if: github.ref_name == env.MAIN_BRANCH
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
