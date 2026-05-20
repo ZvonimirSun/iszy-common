@@ -5,6 +5,10 @@ on:
       - main
   workflow_dispatch:
 
+permissions:
+  id-token: write  # Required for OIDC
+  contents: read
+
 env:
   MAIN_BRANCH: main
 
@@ -22,7 +26,5 @@ jobs:
         run: pnpm run build
 
       - name: Publish
-        run: pnpm publish --access public
         if: github.ref_name == env.MAIN_BRANCH
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: pnpm publish --access public
