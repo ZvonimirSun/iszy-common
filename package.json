@@ -19,6 +19,9 @@
   "files": [
     "./dist"
   ],
+  "repository": {
+    "url": "https://github.com/ZvonimirSun/iszy-common"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build && tsc -p tsconfig.build.json",
