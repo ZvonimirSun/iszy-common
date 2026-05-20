@@ -1,2 +1,8 @@
+minimumReleaseAgeExclude:
+  - taze@19.13.0
+
 onlyBuiltDependencies:
   - esbuild
+
+overrides:
+  jsonc-eslint-parser: ^3.1.0
