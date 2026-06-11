@@ -6,4 +6,6 @@ export interface RawRole {
   alias: string
   desc?: string
   privileges?: RawPrivilege[]
+  isBuiltIn?: boolean
+  isDefault?: boolean
 }
