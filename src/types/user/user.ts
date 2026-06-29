@@ -18,6 +18,7 @@ export interface RawUser {
   privileges?: RawPrivilege[]
   github?: string
   linuxdo?: string
+  authentik?: string
 }
 
 export type PublicUser = Omit<RawUser, 'passwd' | 'passwdSalt'>
